@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  background-color: rgb(199, 199, 199);
+}
+.container h2 {
+  text-align: center;
+  padding: 0.5rem;
+}
+.calculate {
+  padding: 0.5rem;
+}
+.calculate .calculate__amount {
+  padding: 0.5rem 0;
+  text-align: end;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 1rem;
+}
+
+.calculate .calculate__amount div {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  justify-content: center;
+}
+
+.calculate label {
+  width: 100px;
+}
+
+.calculate input {
+  width: 100px;
+  padding: 0.5rem;
+}
+.answer {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  margin-bottom: 0;
+  background-color: green;
+  color: #fff;
+}
+.output {
+  padding: 1rem;
+  text-align: center;
+  visibility: hidden;
+}
+
+.output div {
+  padding: 1rem;
+}
+
+.btn {
+  padding: 0.5rem;
+}
+
+.btns {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btns .btn {
+  background-color: blue;
+  color: #fff;
+  border-radius: 0.2rem;
+  border: none;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}

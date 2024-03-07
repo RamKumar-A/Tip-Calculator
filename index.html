@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Tip Calculator</h2>
+      <div class="calculate">
+        <div class="calculate__amount">
+          <label for="bill-amount">Bill Amount $: </label>
+          <input
+            type="number"
+            id="bill-amount"
+            placeholder="bill amount"
+            required
+          />
+        </div>
+        <div class="calculate__amount">
+          <label for="tip-percentage">Tip %:</label>
+          <div>
+            <button class="btn dec">-</button>
+            <input
+              type="number"
+              id="tip-percentage"
+              class="tip-percentage"
+              value="15"
+            />
+            <button class="btn inc">+</button>
+          </div>
+        </div>
+        <div class="calculate__amount">
+          <label for="person">No. of Persons:</label>
+          <div>
+            <button class="btn dec">-</button>
+            <input type="number" min="1" id="person" class="person" value="1" />
+            <button class="btn inc">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="btns">
+        <button class="btn clear">Clear</button>
+        <button class="btn calulate-tip">Calculate</button>
+      </div>
+      <h2 class="answer">Output</h2>
+      <div class="output">
+        <div>Tip Total: <span class="output__tip"></span></div>
+        <div>
+          Total <small>(Per Person)</small>:
+          <span class="output__per_person"></span>
+        </div>
+
+        <div class="">
+          <input type="checkbox" id="round__off" />
+          <label for="round__off">Round Off </label>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
